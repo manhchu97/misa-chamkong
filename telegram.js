@@ -42,10 +42,11 @@ bot.on("message", async (msg) => {
       /setting-account <username> <password>
     - Để cấu hình thời gian check-in cho nhiều ngày, nhập:
       /setting-schedule
-      Monday: 08:00 17:00
-      Tuesday: 09:00 18:00
-      Sunday: Nghỉ
-      ...
+      Monday: 08:56 18:10
+      Tuesday: 08:50 18:05
+      Wednesday: 08:40 18:12
+      Thursday: 08:36 18:10
+      Friday: 08:57 18:20
     `;
 
     bot.sendMessage(chatId, helpMessage);
