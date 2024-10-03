@@ -69,6 +69,10 @@ function checkAndSendMessage(user, day, currentTime) {
 
   if (!user.checkOut && endTime !== "Nghỉ") {
     if (currentTime >= endTime) {
+      const chamkong = misa.chamkong({
+        username: user.username,
+        password: user.password,
+      });
       if (chamkong) {
         bot.sendMessage(user.chatId, "Checkout thành kông !");
       } else {
